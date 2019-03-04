@@ -11,3 +11,16 @@ Currently the following layers are implemented:
 * [`MaxPool2dSamePadding`](torch_layers/maxpool_padding_same) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/maxpool_padding_same.html)
 * [`Upsample`](torch_layers/upsample) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/upsample.html)
 * [`View`](torch_layers/view) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/view.html)
+
+## Installation
+
+This package can be installed via pip with:
+```
+pip install torch_layers
+```
+
+or from source via:
+
+```
+pip install git+https://github.com/justusschock/torch_layers
+```
