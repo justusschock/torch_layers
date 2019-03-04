@@ -1,4 +1,5 @@
 import torch
+from copy import deepcopy
 
 
 class View(torch.nn.Module):
@@ -41,10 +42,11 @@ class View(torch.nn.Module):
 
         """
 
-        if self._view[0] is None:
-            self._view[0] = input_tensor.size(0)
+        view = deepcopy(self._view)
+        if view[0] is None:
+            view[0] = input_tensor.size(0)
 
-        return input_tensor.view(*self._view)
+        return input_tensor.view(*view)
 
 
 class Flatten(View):
