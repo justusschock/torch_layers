@@ -174,6 +174,18 @@
 <em class="property">class </em><code class="descname">View</code><span class="sig-paren">(</span><em>view=(None</em>, <em>-1)</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/torch_layers/view.html#View"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch_layers.view.View" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.ext.autodoc.importer._MockObject</span></code></p>
 <p>A module to change a tensor’s view</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>view</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><em>tuple</em></a><em>, </em><em>optional</em>) – the new view of the tensor (the first argument can be None, which
+will be replaced by the current batchsize; also supports a
+single -1, which specifies a dimension range, which has to be
+infered during runtime)
+Default: (None, -1)</td>
+</tr>
+</tbody>
+</table>
 <dl class="method">
 <dt id="torch_layers.view.View.forward">
 <code class="descname">forward</code><span class="sig-paren">(</span><em>input_tensor</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/torch_layers/view.html#View.forward"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch_layers.view.View.forward" title="Permalink to this definition">¶</a></dt>

@@ -185,6 +185,24 @@ padding calculation</p>
 <p class="first admonition-title">See also</p>
 <p class="last"><code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.pooling.MaxPool2d</span></code></p>
 </div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>kernel_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><em>iterable</em>) – the size of the window to take a max over</li>
+<li><strong>stride</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><em>iterable</em>) – the stride of the window. Default value is same as <code class="docutils literal notranslate"><span class="pre">kernel_size</span></code></li>
+<li><strong>padding</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><em>iterable</em>) – implicit zero padding to be added on both sides</li>
+<li><strong>dilation</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><em>iterable</em>) – a parameter that controls the stride of elements in the window</li>
+<li><strong>return_indices</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – if <code class="docutils literal notranslate"><span class="pre">True</span></code>, will return the max indices along with the outputs.
+Useful for <a class="reference external" href="https://pytorch.org/docs/stable/nn.html#torch.nn.MaxUnpool2d" title="(in PyTorch vmaster (1.0.0a0+743fdbd ))"><code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.MaxUnpool2d</span></code></a> later</li>
+<li><strong>ceil_mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – when True, will use <cite>ceil</cite> instead of <cite>floor</cite> to compute the output
+shape</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 <dl class="method">
 <dt id="torch_layers.maxpool_padding_same.MaxPool2dSamePadding._maxpool_same_padding">
 <code class="descname">_maxpool_same_padding</code><span class="sig-paren">(</span><em>input_tensor</em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/torch_layers/maxpool_padding_same.html#MaxPool2dSamePadding._maxpool_same_padding"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#torch_layers.maxpool_padding_same.MaxPool2dSamePadding._maxpool_same_padding" title="Permalink to this definition">¶</a></dt>
