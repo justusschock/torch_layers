@@ -162,6 +162,7 @@
             
   <h1>Source code for torch_layers.view</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">from</span> <span class="nn">copy</span> <span class="k">import</span> <span class="n">deepcopy</span>
 
 
 <div class="viewcode-block" id="View"><a class="viewcode-back" href="../../_api/_build/torch_layers/view.html#torch_layers.view.View">[docs]</a><span class="k">class</span> <span class="nc">View</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
@@ -204,10 +205,11 @@
 
 <span class="sd">        &quot;&quot;&quot;</span>
 
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_view</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_view</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_tensor</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">view</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_view</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">view</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">view</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_tensor</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-        <span class="k">return</span> <span class="n">input_tensor</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_view</span><span class="p">)</span></div></div>
+        <span class="k">return</span> <span class="n">input_tensor</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">*</span><span class="n">view</span><span class="p">)</span></div></div>
 
 
 <div class="viewcode-block" id="Flatten"><a class="viewcode-back" href="../../_api/_build/torch_layers/view.html#torch_layers.view.Flatten">[docs]</a><span class="k">class</span> <span class="nc">Flatten</span><span class="p">(</span><span class="n">View</span><span class="p">):</span>
