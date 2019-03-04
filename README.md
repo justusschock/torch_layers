@@ -6,8 +6,8 @@ This repository implements various layers (either to replace deprecated layers o
 
 Currently the following layers are implemented:
 
-* [`Conv2dWithSamePadding`](torch_layers/conv_padding_same) [docs](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/conv_padding_same.html)
-* [`ActivationConv`](torch_layers/activation_conv) [docs](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/activation_conv.html)
-* [`MaxPool2dSamePadding`](torch_layers/maxpool_padding_same) [docs](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/maxpool_padding_same.html)
-* [`Upsample`](torch_layers/upsample) [docs](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/upsample.html)
-* [`View`](torch_layers/view) [docs](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/view.html)
+* [`Conv2dWithSamePadding`](torch_layers/conv_padding_same) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/conv_padding_same.html)
+* [`ActivationConv`](torch_layers/activation_conv) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/activation_conv.html)
+* [`MaxPool2dSamePadding`](torch_layers/maxpool_padding_same) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/maxpool_padding_same.html)
+* [`Upsample`](torch_layers/upsample) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/upsample.html)
+* [`View`](torch_layers/view) [[docs]](https://justusschock.github.io/torch_layers/_api/_build/torch_layers/view.html)
