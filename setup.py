@@ -47,5 +47,17 @@ setup(
     license=license,
     author='Justus Schock',
     author_email='justus.schock@rwth-aachen.de',
-    long_description=readme
+    long_description=readme,
+    install_requires=requirements,
+    tests_require=["pytest-cov"],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Education",
+        "Intended Audience :: Science/Research",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Scientific/Engineering :: Medical Science Apps."
+    ]
 )
