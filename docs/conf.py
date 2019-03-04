@@ -224,6 +224,8 @@ autodoc_default_flags = ['members',
 
 autodoc_inherit_docstrings = True
 
+autoclass_content = 'both'
+
 autodoc_mock_imports = [
     "numpy",
     "torchvision",
