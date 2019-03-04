@@ -1,4 +1,4 @@
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 from .activation_conv import ActivationConv as ActivationConv2d
 from .conv_padding_same import Conv2dWithSamePadding
