@@ -7,3 +7,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: MaxPool2dSamePadding
+    :members:
+    :undoc-members:
+    :show-inheritance:
