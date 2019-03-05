@@ -7,3 +7,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: Conv2dWithSamePadding
+    :members:
+    :undoc-members:
+    :show-inheritance:
