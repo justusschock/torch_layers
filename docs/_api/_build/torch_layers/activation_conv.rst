@@ -7,3 +7,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: ActivationConv
+    :members:
+    :undoc-members:
+    :show-inheritance:
