@@ -7,3 +7,6 @@
 ~~~~~~~~~~~~~~~~~~
 
 .. autoclass:: Upsample
+    :members:
+    :undoc-members:
+    :show-inheritance:
